@@ -10,8 +10,8 @@
     int tegkerulet = 2*(a+b);
     printf("a négyzet területe %d és a kerülete %d\n", tegterulet, tegkerulet);
     printf("Adja meg a kör sugarát");
-    float korsugar = 0; 
-    scanf("%f", &korsugar);
+    double korsugar = 0; 
+    scanf("%lf", &korsugar);
     double korterulet = pow(korsugar, 2)*M_PI;
     double korkerulet = 2*korsugar*M_PI;
     printf("A kör területe %f a kerülete pedig %f\n", korterulet, korkerulet);
