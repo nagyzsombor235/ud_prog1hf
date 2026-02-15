@@ -1,2 +1,2 @@
 run: 
-	rm ./executable && gcc $(FILE) -o executable && ./executable
+	gcc $(FILE) -o executable  -lm && ./executable
