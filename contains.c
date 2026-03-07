@@ -12,6 +12,14 @@ int contains(int t[],int n,int p)
 
 int main()
 {
-    int tomb[8]={0,1,2,3,4,5,6,7};
+    int arraysize = 0;
+    printf("Milyen nagy legyne a tömb mérete?");
+    scanf("%d",&arraysize);
+    int tomb[arraysize];
+    for (int i = 0; i < arraysize; i++)
+    {
+        printf("Mennyi legye a tömb %d. eleme",i);
+        scanf("%d",&tomb[i]);
+    }
     printf("%d",contains(tomb,8,9));
 }
