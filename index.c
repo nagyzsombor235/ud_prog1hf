@@ -9,12 +9,12 @@ int ind(int t[],int n,int p)
             return i;
         }
     }
-    return 0;
+    return -1;
     
 }
 
 int main()
 {
     int tomb[7]={0,1,2,3,4,5,6};
-    printf("%d",ind(tomb,7,3));
+    printf("%d",ind(tomb,7,9));
 }
