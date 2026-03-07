@@ -15,12 +15,11 @@ int main()
             printf(" ");
             width -= 1;
         }
-            int leker = floor(width/2)+1;
             int felker = ceil(width/2);
 
         for (int n = 1;n <=width; n++)
         {
-            if ((n != leker) && (n != felker))
+            if ((n != felker+1) && (n != felker))
             {
                 printf("#");
             }
