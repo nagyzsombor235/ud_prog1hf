@@ -32,7 +32,15 @@ int max(int t[],int n)
 
 int main()
 {
-    int tomb[8]={1,1,2,3,4,5,6,7};
-    printf("%d\n",min(tomb,8));
-    printf("%d\n",max(tomb,8));
+    int arraysize = 0;
+    printf("Milyen nagy legyne a tömb mérete?");
+    scanf("%d",&arraysize);
+    int tomb[arraysize];
+    for (int i = 0; i < arraysize; i++)
+    {
+        printf("Mennyi legye a tömb %d. eleme",i);
+        scanf("%d",&tomb[i]);
+    }
+    printf("%d\n",min(tomb,arraysize));
+    printf("%d\n",max(tomb,arraysize));
 }
