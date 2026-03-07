@@ -15,6 +15,14 @@ int rendezett(int t[],int n)
 
 int main()
 {
-    int tomb[2]={0,1};
-    printf("%d", rendezett(tomb,0));
+    int arraysize = 0;
+    printf("Milyen nagy legyne a tömb mérete?");
+    scanf("%d",&arraysize);
+    int tomb[arraysize];
+    for (int i = 0; i < arraysize; i++)
+    {
+        printf("Mennyi legye a tömb %d. eleme",i);
+        scanf("%d",&tomb[i]);
+    }
+    printf("%d\n", rendezett(tomb,arraysize));
 }
