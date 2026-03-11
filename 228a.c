@@ -11,11 +11,10 @@ int valid_triangle(int a,int b,int c)
         else
         {
             return 0;
-        }
-        
+        }   
     }
-    
 }
+
 
 int main()
 {
