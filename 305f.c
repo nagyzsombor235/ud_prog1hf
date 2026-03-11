@@ -13,8 +13,9 @@ void array_write(int t[],int n)
             printf("%d\n",t[i]);
         }
     }
-    
 }
+
+
 int main()
 {
     int arraysize = 0;
