@@ -7,8 +7,7 @@ int is_even(int n)
         return 1;
     }
     else
-    return 0;
-    
+    return 0; 
 }
 
 
@@ -20,7 +19,6 @@ int is_odd(int n)
     }
     else
     return 0;
-    
 }
 
 int is_odd2(int n)
