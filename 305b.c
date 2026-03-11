@@ -12,8 +12,8 @@ int min(int t[],int n)
         
         return min;
     }
-    
 }
+
 
 int max(int t[],int n)
 {
@@ -26,7 +26,6 @@ int max(int t[],int n)
         }
     }
     return max;
-    
 }
 
 
