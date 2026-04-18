@@ -15,34 +15,34 @@ void fill(int array[])
         array[i] = rand() % (99-10) +10;
     } 
 }
-struct arraydata data1;
-void analyzer(int array[], const int range)
+
+arraydata data2(int array[], const int range)
 {
+    arraydata data1;
     int sum = 0;
-    int min = array[0];
-    int max = array[0];
+    data1.lowest = array[0];
+    data1.highest = array[0];
     for (int i = 0; i < range; i++)
     {
-        if (array[i] < min)
+        if (array[i] < data1.lowest)
         {
-            min = array[i];
+            data1.lowest = array[i];
         }
-        else if (array[i] > min)
+        else if (array[i] > data1.highest)
         {
-            max = array[i];
+            data1.highest = array[i];
         }
         sum += array[i];
     }
     float avg = sum/range;
-    data1.lowest = min;
-    data1.highest = max;
     data1.avarage = avg;
+    return data1;
 }
 
 int main()
 {
     int array[10];
     fill(array);
-    analyzer(array,10);
+    arraydata data1 = data2(array,10);
     printf("A legkisebb elem:%d,a legnagyobb elem:%d, a tömb átlaga:%lf\n", data1.lowest, data1.highest, data1.avarage);
 }
